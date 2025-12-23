@@ -65,7 +65,7 @@ pip install -r requirements.txt
 export OPENAI_API_KEY="your-api-key-here"
 
 # Run the development server
-uvicorn instant:app --reload --port 8000
+uvicorn app.main:app --reload --port 8000
 ```
 
 Visit `http://localhost:8000` to get your horoscope!
@@ -83,12 +83,21 @@ Visit `http://localhost:8000` to get your horoscope!
 
 ---
 
-## 🎭 How It Works
+## 📁 Project Structure
 
-1. **Enter Your Details** — Name, birth date, and reading type
-2. **Zodiac Calculation** — Your sun sign is automatically determined
-3. **AI Generation** — GPT-4o-mini creates a personalized horoscope
-4. **Styled Results** — Beautiful, element-themed reading with lucky numbers
+```
+deploy/
+├── app/                    # Main application package
+│   ├── __init__.py         # Package initialization
+│   ├── main.py             # FastAPI routes and app setup
+│   ├── zodiac.py           # Zodiac sign data and calculations
+│   ├── horoscope.py        # AI horoscope generation service
+│   └── templates.py        # HTML templates and styling
+├── instant.py              # Vercel entry point
+├── requirements.txt        # Python dependencies
+├── vercel.json             # Vercel deployment config
+└── README.md               # Documentation
+```
 
 ---
 
@@ -103,15 +112,12 @@ Visit `http://localhost:8000` to get your horoscope!
 
 ---
 
-## 📁 Project Structure
+## 🎭 How It Works
 
-```
-deploy/
-├── instant.py       # Main FastAPI application
-├── requirements.txt # Python dependencies
-├── vercel.json      # Vercel deployment config
-└── README.md        # You are here
-```
+1. **Enter Your Details** — Name, birth date, and reading type
+2. **Zodiac Calculation** — Your sun sign is automatically determined (`zodiac.py`)
+3. **AI Generation** — GPT-4o-mini creates a personalized horoscope (`horoscope.py`)
+4. **Styled Results** — Beautiful, element-themed reading (`templates.py`)
 
 ---
 
