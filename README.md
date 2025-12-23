@@ -1,22 +1,46 @@
-# 🔮 The AI Oracle
+# ✨ Celestial Horoscope
 
-> *Whispers from the Digital Cosmos*
+> *Discover What the Stars Have Written for You*
 
-An immersive, mystical fortune-telling experience powered by AI. Ask the Oracle your deepest questions and receive cryptic prophecies woven from starlight and quantum echoes.
+A beautiful, AI-powered horoscope application that generates personalized zodiac readings based on your birth details.
 
-![The AI Oracle](https://img.shields.io/badge/Powered%20by-GPT--4o--mini-purple?style=for-the-badge)
+![Powered by GPT-4o-mini](https://img.shields.io/badge/Powered%20by-GPT--4o--mini-purple?style=for-the-badge)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)
 
 ---
 
-## ✨ Features
+## 🌟 Features
 
-- **🌙 Mystical AI Prophecies** — GPT-4o-mini generates poetic, cryptic fortunes tailored to your questions
-- **🎨 Stunning Cosmic UI** — Deep purple nebula gradients, twinkling stars, and ethereal animations
-- **👁️ Animated Oracle Eye** — A floating, gazing eye that watches over seekers
-- **📱 Fully Responsive** — Beautiful on desktop and mobile devices
-- **⚡ Instant Deploy** — One-click deployment to Vercel
+- **🎂 Birth Date Analysis** — Automatically calculates your zodiac sign from your birth date
+- **🔮 Multiple Reading Types:**
+  - Daily Horoscope
+  - Love & Relationships
+  - Career & Finance
+  - Health & Wellness
+  - Comprehensive Reading
+- **🎨 Element-Themed Design** — Colors adapt to your sign's element (Fire, Earth, Air, Water)
+- **🤖 AI-Powered Insights** — GPT-4o-mini generates personalized, meaningful horoscopes
+- **✨ Lucky Numbers & Colors** — Get your daily cosmic guidance
+
+---
+
+## ♈ Supported Zodiac Signs
+
+| Sign | Dates | Element |
+|------|-------|---------|
+| ♈ Aries | Mar 21 - Apr 19 | 🔥 Fire |
+| ♉ Taurus | Apr 20 - May 20 | 🌍 Earth |
+| ♊ Gemini | May 21 - Jun 20 | 💨 Air |
+| ♋ Cancer | Jun 21 - Jul 22 | 💧 Water |
+| ♌ Leo | Jul 23 - Aug 22 | 🔥 Fire |
+| ♍ Virgo | Aug 23 - Sep 22 | 🌍 Earth |
+| ♎ Libra | Sep 23 - Oct 22 | 💨 Air |
+| ♏ Scorpio | Oct 23 - Nov 21 | 💧 Water |
+| ♐ Sagittarius | Nov 22 - Dec 21 | 🔥 Fire |
+| ♑ Capricorn | Dec 22 - Jan 19 | 🌍 Earth |
+| ♒ Aquarius | Jan 20 - Feb 18 | 💨 Air |
+| ♓ Pisces | Feb 19 - Mar 20 | 💧 Water |
 
 ---
 
@@ -44,7 +68,7 @@ export OPENAI_API_KEY="your-api-key-here"
 uvicorn instant:app --reload --port 8000
 ```
 
-Visit `http://localhost:8000` to consult the Oracle.
+Visit `http://localhost:8000` to get your horoscope!
 
 ---
 
@@ -61,13 +85,10 @@ Visit `http://localhost:8000` to consult the Oracle.
 
 ## 🎭 How It Works
 
-1. **Ask a Question** — Type your deepest inquiry into the Oracle's portal
-2. **The Oracle Perceives** — AI channels cosmic wisdom through various mystical themes:
-   - Cosmic whispers from distant galaxies
-   - Ancient runes carved in starlight
-   - Echoes from the quantum realm
-   - Shadows of possible futures intertwining
-3. **Receive Your Prophecy** — A beautifully rendered mystical response appears
+1. **Enter Your Details** — Name, birth date, and reading type
+2. **Zodiac Calculation** — Your sun sign is automatically determined
+3. **AI Generation** — GPT-4o-mini creates a personalized horoscope
+4. **Styled Results** — Beautiful, element-themed reading with lucky numbers
 
 ---
 
@@ -76,9 +97,9 @@ Visit `http://localhost:8000` to consult the Oracle.
 | Technology | Purpose |
 |------------|---------|
 | **FastAPI** | High-performance Python web framework |
-| **OpenAI GPT-4o-mini** | AI-powered prophecy generation |
+| **OpenAI GPT-4o-mini** | AI-powered horoscope generation |
 | **Vercel** | Serverless deployment platform |
-| **Pure CSS** | Animations, gradients, and cosmic effects |
+| **Pure CSS** | Starfield animations & responsive design |
 
 ---
 
@@ -94,24 +115,25 @@ deploy/
 
 ---
 
-## 🎨 Design Philosophy
+## 🎨 Design
 
-The Oracle embraces a **cosmic mystical aesthetic**:
-
-- **Colors:** Void black, nebula purple, mystic gold, ethereal cream, accent cyan
-- **Typography:** Cinzel Decorative (titles) + Cormorant Garamond (body)
-- **Effects:** Floating animations, shimmer gradients, pulsing glows, twinkling stars
-- **Mood:** Ancient wisdom meets digital consciousness
+- **Theme:** Deep space with twinkling stars
+- **Colors:** Gold accents on cosmic blue/purple
+- **Typography:** Playfair Display (headings) + Raleway (body)
+- **Element Colors:**
+  - 🔥 Fire signs: Orange/Red
+  - 🌍 Earth signs: Green
+  - 💨 Air signs: Cyan/Blue
+  - 💧 Water signs: Purple
 
 ---
 
 ## 📜 License
 
-MIT License — Feel free to fork, modify, and deploy your own Oracle!
+MIT License — Feel free to fork and customize!
 
 ---
 
 <p align="center">
-  <em>✦ The stars have aligned. Your destiny awaits. ✦</em>
+  <em>⭐ May the stars guide your path ⭐</em>
 </p>
-
