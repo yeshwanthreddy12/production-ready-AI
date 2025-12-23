@@ -17,7 +17,7 @@ The readings adapt to your sign's element (fire, earth, air, water) with matchin
 ## Running locally
 
 ```bash
-git clone https://github.com/yeshwanthreddy12/production-ready-AI.git
+git clone https://github.com/yeshwanthreddy12/ai-horoscope.git
 cd deploy
 
 pip install -r requirements.txt
